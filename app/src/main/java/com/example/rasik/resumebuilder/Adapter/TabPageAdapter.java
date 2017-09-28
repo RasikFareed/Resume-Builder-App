@@ -14,6 +14,8 @@ import com.example.rasik.resumebuilder.Fragments.PersonalFragment;
 
 public class TabPageAdapter extends FragmentPagerAdapter {
 
+    private int pageCount= 3;
+
     public TabPageAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -39,4 +41,7 @@ public class TabPageAdapter extends FragmentPagerAdapter {
         return 3;
     }
 
+    public void setPageCount(int pageCount) {
+        this.pageCount=pageCount;
+    }
 }
