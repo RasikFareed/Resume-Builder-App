@@ -7,4 +7,11 @@
     <string name="date">Date</string>
     <string name="street">Street</string>
     <string name="district">District</string>
+    <string name="school_name">School Name</string>
+    <string name="year_of_passing">Year of passing</string>
+    <string name="percentage">Percentage</string>
+    <string name="college_name">College Name</string>
+    <string name="tenth">X</string>
+    <string name="twelth">XII</string>
+    <string name="college_university">College/University</string>
 </resources>
