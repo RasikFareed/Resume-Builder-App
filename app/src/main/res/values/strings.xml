@@ -4,7 +4,7 @@
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
     <string name="next">Next</string>
-    <string name="date">Date</string>
+    <string name="date">Date of birth</string>
     <string name="street">Street</string>
     <string name="district">District</string>
     <string name="school_name">School Name</string>
@@ -18,4 +18,8 @@
     <string name="skill_2">Skill 2</string>
     <string name="skill_3">Skill 3</string>
     <string name="skill_4">Skill 4</string>
+    <string name="name">Name</string>
+    <string name="career_objective">Career Objective</string>
+    <string name="school_college">School/College</string>
+    <string name="skills">Skills</string>
 </resources>

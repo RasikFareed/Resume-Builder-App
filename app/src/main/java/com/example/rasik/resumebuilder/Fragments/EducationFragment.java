@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.rasik.resumebuilder.R;
+import com.example.rasik.resumebuilder.Util.TinyDB;
 
 /**
  * Created by rasik on 28/9/17.
@@ -45,6 +46,20 @@ public class EducationFragment extends Fragment {
         btn_next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                TinyDB tinydb = new TinyDB(getContext());
+                tinydb.putString("tenth",inputTenthSchoolName.getText().toString().trim());
+                tinydb.putString("tenthYear",inputTenthYear.getText().toString().trim());
+                tinydb.putString("tenthPercent",inputTenthPercentage.getText().toString().trim());
+
+                tinydb.putString("twelth",inputTwelthSchoolName.getText().toString().trim());
+                tinydb.putString("twelthYear",inputTwelthYear.getText().toString().trim());
+                tinydb.putString("twelthPercent",inputTwelthPercentage.getText().toString().trim());
+
+                tinydb.putString("college",inputCollegeName.getText().toString().trim());
+                tinydb.putString("collegeYear",inputCollegeYear.getText().toString().trim());
+                tinydb.putString("collegePercent",inputCollegePercentage.getText().toString().trim());
+
                 viewPager = getActivity().findViewById(R.id.viewpager);
                 viewPager.setCurrentItem(2);
             }

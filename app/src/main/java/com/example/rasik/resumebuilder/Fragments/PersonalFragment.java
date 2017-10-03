@@ -2,6 +2,8 @@ package com.example.rasik.resumebuilder.Fragments;
 
 
 import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -14,6 +16,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 
 import com.example.rasik.resumebuilder.R;
+import com.example.rasik.resumebuilder.Util.TinyDB;
 
 import java.util.Calendar;
 
@@ -24,16 +27,26 @@ import java.util.Calendar;
 
 public class PersonalFragment extends Fragment {
 
+
     EditText input_date,inputFirstName,inputLastName,input_email,input_street,input_district,input_pincode;
     Button next1;
     ViewPager viewPager;
     TabLayout tabLayout;
     Calendar myCalendar = Calendar.getInstance();
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.personal_info_fragment, container, false);
+
+      //  final Map<String, String> aMap = new HashMap<String, String>();
+        SharedPreferences mPrefs = this.getContext().getSharedPreferences("mpref", Context.MODE_PRIVATE);
+       final SharedPreferences.Editor editor = mPrefs.edit();
+       // final Set<String> personalStrings = mPrefs.getStringSet("personalStrings", new HashSet<String>());
+
+
 
         inputFirstName = (EditText)rootView.findViewById(R.id.inputFirstName);
         inputLastName = (EditText) rootView.findViewById(R.id.inputLastName);
@@ -61,6 +74,17 @@ public class PersonalFragment extends Fragment {
         next1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                TinyDB tinydb = new TinyDB(getContext());
+                tinydb.putString("firstName",inputFirstName.getText().toString().trim());
+                tinydb.putString("lastName",inputLastName.getText().toString().trim());
+                tinydb.putString("email",input_email.getText().toString().trim());
+                tinydb.putString("date",input_date.getText().toString().trim());
+                tinydb.putString("street",input_street.getText().toString().trim());
+                tinydb.putString("district",input_district.getText().toString().trim());
+                tinydb.putString("pincode",input_pincode.getText().toString().trim());
+
+
              viewPager = getActivity().findViewById(R.id.viewpager);
              viewPager.setCurrentItem(1);
             }
