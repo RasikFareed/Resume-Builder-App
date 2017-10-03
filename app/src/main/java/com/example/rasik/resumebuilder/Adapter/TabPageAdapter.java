@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.rasik.resumebuilder.Fragments.EducationFragment;
-import com.example.rasik.resumebuilder.Fragments.InterestFragment;
+import com.example.rasik.resumebuilder.Fragments.SkillFragment;
 import com.example.rasik.resumebuilder.Fragments.PersonalFragment;
 
 /**
@@ -29,7 +29,7 @@ public class TabPageAdapter extends FragmentPagerAdapter {
             case 1:
                 return new EducationFragment();
             case 2:
-                return new InterestFragment();
+                return new SkillFragment();
         }
 
         return null;

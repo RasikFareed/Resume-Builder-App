@@ -17,17 +17,20 @@
         android:layout_marginTop="39dp"
         app:srcCompat="@android:drawable/alert_dark_frame" />
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/resumeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView"
         android:layout_marginLeft="26dp"
         android:layout_marginStart="26dp"
-        android:layout_toEndOf="@+id/imageView"
         android:layout_toRightOf="@+id/imageView"
         android:ems="10"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:text="Name"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -38,35 +41,52 @@
         android:layout_marginLeft="23dp"
         android:layout_marginStart="23dp"
         android:layout_marginTop="44dp"
-        android:id="@+id/cardView" />
+        android:id="@+id/cardView" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="374dp"
+            android:layout_height="match_parent"
+            android:text="Career Objective" />
+    </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_centerVertical="true"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/cardView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/cardView"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="26dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="School/College" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/cardView2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/cardView"
-        android:layout_alignStart="@+id/cardView"
-        android:id="@+id/cardView2" />
-
-    <android.support.v7.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/cardView2"
         android:layout_alignLeft="@+id/cardView2"
-        android:layout_alignStart="@+id/cardView2"
-        android:id="@+id/cardView3" />
+        android:layout_alignStart="@+id/cardView2">
 
-    <android.support.v7.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_alignTop="@+id/cardView3"
-        android:layout_toRightOf="@+id/cardView3"
-        android:layout_toEndOf="@+id/cardView3"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Skills" />
+
+    </android.support.v7.widget.CardView>
 
 
 </RelativeLayout>

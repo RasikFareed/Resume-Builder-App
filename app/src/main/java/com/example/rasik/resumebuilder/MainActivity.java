@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 import com.example.rasik.resumebuilder.Adapter.TabPageAdapter;
 import com.example.rasik.resumebuilder.Fragments.EducationFragment;
-import com.example.rasik.resumebuilder.Fragments.InterestFragment;
+import com.example.rasik.resumebuilder.Fragments.SkillFragment;
 import com.example.rasik.resumebuilder.Fragments.PersonalFragment;
 
 import java.util.ArrayList;
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new PersonalFragment(), "Personal Info");
         adapter.addFragment(new EducationFragment(), "Educational Info");
-        adapter.addFragment(new InterestFragment(), "Interest Info");
+        adapter.addFragment(new SkillFragment(), "Skill Info");
         viewPager.setAdapter(adapter);
     }
 

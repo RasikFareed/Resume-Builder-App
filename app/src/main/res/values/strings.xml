@@ -14,4 +14,8 @@
     <string name="tenth">X</string>
     <string name="twelth">XII</string>
     <string name="college_university">College/University</string>
+    <string name="skill_1">Skill 1</string>
+    <string name="skill_2">Skill 2</string>
+    <string name="skill_3">Skill 3</string>
+    <string name="skill_4">Skill 4</string>
 </resources>
