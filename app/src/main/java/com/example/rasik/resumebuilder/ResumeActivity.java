@@ -117,7 +117,6 @@ public class ResumeActivity extends AppCompatActivity {
         File pdfFolder = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "Resume");
         if (!pdfFolder.exists()) {
             pdfFolder.mkdir();
-            System.out.println(pdfFolder.getPath());
             Log.i("Tag", "Pdf Directory created");
         }
 
@@ -176,7 +175,6 @@ public class ResumeActivity extends AppCompatActivity {
         {
             document.add(image);
         } catch (DocumentException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -208,7 +206,6 @@ public class ResumeActivity extends AppCompatActivity {
                 out.close();
             }
         } catch (IOException e) {
-            // TODO: handle exception
         }
         return bitmap;
     }
@@ -216,8 +213,7 @@ public class ResumeActivity extends AppCompatActivity {
 
     public  boolean isStoragePermissionGranted() {
         if (Build.VERSION.SDK_INT >= 23) {
-            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED) {
+            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED) {
                 Log.v(TAG,"Permission is granted");
                 return true;
             } else {
