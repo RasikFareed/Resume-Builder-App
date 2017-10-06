@@ -1,8 +1,11 @@
 package com.example.rasik.resumebuilder.Fragments;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +42,7 @@ public class SkillFragment extends Fragment {
         ratingBar2 = (RatingBar)rootView.findViewById(R.id.ratingBar2);
         ratingBar3 = (RatingBar)rootView.findViewById(R.id.ratingBar3);
         ratingBar4 = (RatingBar)rootView.findViewById(R.id.ratingBar4);
+
 
         btn_next3 = (Button)rootView.findViewById(R.id.btn_next3);
 

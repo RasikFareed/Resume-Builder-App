@@ -19,7 +19,8 @@
     <string name="skill_3">Skill 3</string>
     <string name="skill_4">Skill 4</string>
     <string name="name">Name</string>
-    <string name="career_objective">Career Objective</string>
+    <string name="career_objective">Career Objective:"\n" To secure a position with a stable and profitable organization, where I can be a member of a team and utilize my business experience to the fullest.</string>
     <string name="school_college">School/College</string>
     <string name="skills">Skills</string>
+    <string name="generate_pdf">Generate PDF</string>
 </resources>
