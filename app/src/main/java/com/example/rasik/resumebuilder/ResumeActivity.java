@@ -131,7 +131,7 @@ public class ResumeActivity extends AppCompatActivity {
 
 
         try {
-            Rectangle pagesize = new Rectangle(screen.getWidth()+200, screen.getHeight()+200);
+            Rectangle pagesize = new Rectangle(screen.getWidth()+200, screen.getHeight()-100);
             Document  document = new Document(pagesize);
             PdfWriter.getInstance(document, new FileOutputStream(myFile));
             document.open();

@@ -42,9 +42,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView"
+            android:hint="@string/school_name"
             app:hintTextAppearance="@style/CardView.Dark">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/inputTenthSchoolName"
                 android:layout_width="385dp"
                 android:layout_height="wrap_content"
@@ -54,7 +55,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView"
                 android:layout_marginTop="14dp"
-                android:hint="@string/school_name" />
+                 />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -66,9 +67,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/tenth_school"
+            android:hint="@string/year_of_passing"
             app:hintTextAppearance="@style/CardView.Dark">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/inputTenthYear"
                 android:layout_width="385dp"
                 android:layout_height="wrap_content"
@@ -78,7 +80,6 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView"
                 android:layout_marginTop="14dp"
-                android:hint="@string/year_of_passing"
                 android:inputType="date"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -90,9 +91,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/tenth_year"
+            android:hint="@string/percentage"
             app:hintTextAppearance="@style/CardView.Dark">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/inputTenthPercentage"
                 android:layout_width="385dp"
                 android:layout_height="wrap_content"
@@ -102,7 +104,6 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView"
                 android:layout_marginTop="14dp"
-                android:hint="@string/percentage"
                 android:inputType="numberDecimal"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -123,15 +124,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:hint="@string/school_name"
             app:hintTextAppearance="@style/CardView.Dark">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/inputTwelthSchoolName"
                 android:layout_width="385dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:hint="@string/school_name" />
+                android:layout_alignParentStart="true"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -143,9 +144,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tenth_school"
+        android:hint="@string/year_of_passing"
         app:hintTextAppearance="@style/CardView.Dark">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/inputTwelthYear"
             android:layout_width="385dp"
             android:layout_height="wrap_content"
@@ -155,7 +157,6 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView"
             android:layout_marginTop="14dp"
-            android:hint="@string/year_of_passing"
             android:inputType="date"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -167,9 +168,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tenth_year"
+        android:hint="@string/percentage"
         app:hintTextAppearance="@style/CardView.Dark">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/inputTwelthPercentage"
             android:layout_width="385dp"
             android:layout_height="wrap_content"
@@ -179,7 +181,6 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView"
             android:layout_marginTop="14dp"
-            android:hint="@string/percentage"
             android:inputType="numberDecimal"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -204,7 +205,7 @@
         android:layout_alignParentStart="true"
         app:hintTextAppearance="@style/CardView.Dark">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/inputCollegeName"
             android:layout_width="385dp"
             android:layout_height="wrap_content"
@@ -224,7 +225,7 @@
         android:layout_below="@+id/tenth_school"
         app:hintTextAppearance="@style/CardView.Dark">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/inputCollegeYear"
             android:layout_width="385dp"
             android:layout_height="wrap_content"
@@ -248,7 +249,7 @@
         android:layout_below="@+id/tenth_year"
         app:hintTextAppearance="@style/CardView.Dark">
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/inputCollegePercentage"
             android:layout_width="385dp"
             android:layout_height="wrap_content"
