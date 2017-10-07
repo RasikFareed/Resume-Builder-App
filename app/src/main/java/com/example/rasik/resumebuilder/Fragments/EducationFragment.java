@@ -1,6 +1,6 @@
 package com.example.rasik.resumebuilder.Fragments;
 
-import android.icu.util.Calendar;
+import java.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -31,7 +31,6 @@ public class EducationFragment extends Fragment {
     Button btn_next2;
     ViewPager viewPager;
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
