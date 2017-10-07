@@ -30,4 +30,6 @@
     <string name="texterror">Enter a valid text</string>
     <string name="dateString">Date:</string>
     <string name="signature">Signature</string>
+    <string name="education_qualification">Education Qualification</string>
+    <string name="skill_set">Skill Set</string>
 </resources>

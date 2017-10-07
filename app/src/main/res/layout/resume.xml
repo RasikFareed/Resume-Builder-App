@@ -88,13 +88,19 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/education_qualification"
+                android:id="@+id/education"/>
+
+            <TextView
                 android:id="@+id/collegeTextview"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:text="@string/school_college" />
+                android:text="@string/school_college"
+                android:layout_below="@+id/education" />
 
             <TextView
                 android:id="@+id/schoolTextview1"
@@ -119,40 +125,45 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/cardView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/cardView2"
-        android:layout_alignStart="@+id/cardView2">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/cardView2"
+        android:layout_below="@+id/cardView2"
+        android:layout_marginTop="24dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skill_set" />
+
+            <TextView
                 android:id="@+id/skillTextview1"
                 android:layout_width="match_parent"
-                android:layout_height="118dp"
-                android:layout_alignBottom="@+id/resumeRatingBar1"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_toLeftOf="@+id/resumeRatingBar1"
-                android:layout_toStartOf="@+id/resumeRatingBar1"
+                android:layout_below="@+id/skills"
+                android:layout_toLeftOf="@+id/resumeRatingBar2"
+                android:layout_toStartOf="@+id/resumeRatingBar2"
                 android:text="@string/skills"
                 android:textStyle="bold" />
 
             <RatingBar
-                android:theme="@style/RatingBar"
                 android:id="@+id/resumeRatingBar1"
+                style="?attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                style="?attr/ratingBarStyleSmall"/>
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/skillTextview1"
+                android:theme="@style/RatingBar" />
 
 
             <TextView
@@ -169,14 +180,14 @@
                 android:textStyle="bold" />
 
             <RatingBar
-                android:theme="@style/RatingBar"
                 android:id="@+id/resumeRatingBar2"
+                style="?attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/skillTextview1"
-                style="?attr/ratingBarStyleSmall"/>
+                android:theme="@style/RatingBar" />
 
             <TextView
                 android:id="@+id/skillTextview3"
@@ -192,8 +203,8 @@
                 android:textStyle="bold" />
 
             <RatingBar
-                android:theme="@style/RatingBar"
                 android:id="@+id/resumeRatingBar3"
+                style="?attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -201,29 +212,29 @@
                 android:layout_below="@+id/resumeRatingBar2"
                 android:layout_toEndOf="@+id/skillTextview2"
                 android:layout_toRightOf="@+id/skillTextview2"
-                style="?attr/ratingBarStyleSmall"/>
+                android:theme="@style/RatingBar" />
 
             <TextView
                 android:id="@+id/skillTextview4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/skills"
-                android:textStyle="bold"
-                android:layout_below="@+id/skillTextview3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/skillTextview3"
                 android:layout_toLeftOf="@+id/resumeRatingBar3"
-                android:layout_toStartOf="@+id/resumeRatingBar3" />
+                android:layout_toStartOf="@+id/resumeRatingBar3"
+                android:text="@string/skills"
+                android:textStyle="bold" />
 
             <RatingBar
-                android:theme="@style/RatingBar"
                 android:id="@+id/resumeRatingBar4"
+                style="?attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="?attr/ratingBarStyleSmall"
                 android:layout_alignBottom="@+id/skillTextview4"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:theme="@style/RatingBar" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -231,16 +242,15 @@
     <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/cardView3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/cardView3"
+        android:layout_marginTop="12dp"
+        app:cardElevation="0dp"
         android:layout_below="@+id/cardView3"
-        android:layout_marginTop="20dp"
-        app:cardElevation="0dp">
+        android:layout_alignLeft="@+id/cardView3"
+        android:layout_alignStart="@+id/cardView3"
+        android:id="@+id/cardView5">
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
             <TextView
@@ -261,16 +271,18 @@
                 android:hint="@string/signature" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
     <Button
         android:id="@+id/btn_generate"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cardView5"
+        android:layout_marginTop="39dp"
         android:background="@color/colorPrimary"
         android:text="@string/generate_pdf"
-        android:textColor="@android:color/white"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColor="@android:color/white" />
 </RelativeLayout>
 
 </ScrollView>

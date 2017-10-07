@@ -44,7 +44,10 @@ import java.util.Date;
  */
 
 public class ResumeActivity extends AppCompatActivity {
+    final int constHeight = 100;
+    final int constWidth = 200;
     String TAG = "ResumeActivity";
+
     TextView resumeName,resumeEmail,careerTextview,schoolTextview1,schoolTextview2,collegeTextview,skillTextview1,skillTextview2,skillTextview3,skillTextview4;
     RatingBar resumeRatingBar1,resumeRatingBar2,resumeRatingBar3,resumeRatingBar4;
     Button btn_generate;
@@ -131,7 +134,7 @@ public class ResumeActivity extends AppCompatActivity {
 
 
         try {
-            Rectangle pagesize = new Rectangle(screen.getWidth()+200, screen.getHeight()-100);
+            Rectangle pagesize = new Rectangle(screen.getWidth()+constWidth, screen.getHeight()-constHeight);
             Document  document = new Document(pagesize);
             PdfWriter.getInstance(document, new FileOutputStream(myFile));
             document.open();
@@ -158,15 +161,7 @@ public class ResumeActivity extends AppCompatActivity {
         {
             image = Image.getInstance(byteArray);
         }
-        catch (BadElementException e)
-        {
-            e.printStackTrace();
-        }
-        catch (MalformedURLException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
+        catch (BadElementException | IOException e)
         {
             e.printStackTrace();
         }
