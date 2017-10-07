@@ -8,7 +8,7 @@
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
     </style>
 
-    <style name="RatingBar" parent="Theme.AppCompat">
+    <style name="v21RatingBar" parent="RatingBar">
         <item name="colorControlNormal">@color/grey</item>
         <item name="colorControlActivated">@color/colorPrimaryDark</item>
     </style>

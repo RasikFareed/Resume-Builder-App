@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,15 +21,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        app:srcCompat="@android:drawable/alert_dark_frame"
-        android:layout_alignParentTop="true"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp" />
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
 
     <TextView
         android:id="@+id/resumeName"
@@ -67,7 +68,7 @@
         <TextView
             android:id="@+id/careerTextview"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/career_objective" />
     </android.support.v7.widget.CardView>
 
@@ -89,7 +90,7 @@
             <TextView
                 android:id="@+id/collegeTextview"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
@@ -98,21 +99,19 @@
             <TextView
                 android:id="@+id/schoolTextview1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/collegeTextview"
-                android:layout_marginTop="15dp"
                 android:text="@string/school_college" />
 
             <TextView
                 android:id="@+id/schoolTextview2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/schoolTextview1"
-                android:layout_marginTop="29dp"
                 android:text="@string/school_college" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -121,12 +120,12 @@
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/cardView2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/cardView2"
+        android:layout_marginTop="24dp"
         android:layout_below="@+id/cardView2"
-        android:layout_marginTop="48dp">
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/cardView2"
+        android:layout_alignStart="@+id/cardView2">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -152,7 +151,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true" />
+                android:layout_alignParentTop="true"
+                style="?attr/ratingBarStyleSmall"/>
 
 
             <TextView
@@ -175,7 +175,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/skillTextview1" />
+                android:layout_below="@+id/skillTextview1"
+                style="?attr/ratingBarStyleSmall"/>
 
             <TextView
                 android:id="@+id/skillTextview3"
@@ -199,34 +200,67 @@
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/resumeRatingBar2"
                 android:layout_toEndOf="@+id/skillTextview2"
-                android:layout_toRightOf="@+id/skillTextview2" />
+                android:layout_toRightOf="@+id/skillTextview2"
+                style="?attr/ratingBarStyleSmall"/>
 
             <TextView
                 android:id="@+id/skillTextview4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/skills"
+                android:textStyle="bold"
+                android:layout_below="@+id/skillTextview3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/skillTextview3"
-                android:layout_marginTop="26dp"
                 android:layout_toLeftOf="@+id/resumeRatingBar3"
-                android:layout_toStartOf="@+id/resumeRatingBar3"
-                android:text="@string/skills"
-                android:textStyle="bold" />
+                android:layout_toStartOf="@+id/resumeRatingBar3" />
 
             <RatingBar
                 android:theme="@style/RatingBar"
                 android:id="@+id/resumeRatingBar4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_alignBottom="@+id/skillTextview4"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/resumeRatingBar3"
-                android:layout_marginTop="14dp" />
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardView3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/cardView3"
+        android:layout_below="@+id/cardView3"
+        android:layout_marginTop="20dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/dateString" />
+
+            <TextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:hint="@string/signature" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
     <Button
         android:id="@+id/btn_generate"
         android:layout_width="fill_parent"
@@ -234,8 +268,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/generate_pdf"
         android:textColor="@android:color/white"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/cardView3"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>
