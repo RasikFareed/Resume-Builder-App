@@ -91,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/education_qualification"
+                android:textStyle="bold"
                 android:id="@+id/education"/>
 
             <TextView
@@ -141,7 +142,8 @@
                 android:id="@+id/skills"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/skill_set" />
+                android:text="@string/skill_set"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/skillTextview1"
