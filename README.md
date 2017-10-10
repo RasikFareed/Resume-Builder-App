@@ -2,4 +2,4 @@
 This is a simple app to generate resume's in pdf format.
 
 #Screens
-![Alt text](/screens/screen_1.png?raw=true "Screen 1")
+![Alt text](/screens/screen_1.png?raw=true "Screen 1" |  width=48)
