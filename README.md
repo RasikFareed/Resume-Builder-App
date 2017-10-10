@@ -2,4 +2,6 @@
 This is a simple app to generate resume's in pdf format.
 
 #Screens
-![](./screens/screen_1.png =100x20)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/RasikFareed/Resume-Builder-App/blob/master/screens/screen_1.png">
+</p>
