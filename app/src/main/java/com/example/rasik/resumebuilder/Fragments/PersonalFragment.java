@@ -115,9 +115,9 @@ public class PersonalFragment extends Fragment {
     DatePickerDialog.OnDateSetListener onDate = new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear,int dayOfMonth) {
-
+            System.out.println(monthOfYear);
             input_date =  getActivity().findViewById(R.id.input_date);
-            input_date.setText(String.valueOf(year) + "-" + String.valueOf(monthOfYear)+ "-" + String.valueOf(dayOfMonth));
+            input_date.setText(String.valueOf(year) + "-" + String.valueOf(monthOfYear+1)+ "-" + String.valueOf(dayOfMonth));
         }
     };
 
